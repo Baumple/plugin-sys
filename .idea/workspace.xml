@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="plugin-sys:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NotificationPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PluginFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PluginLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/SMSPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/plugin_sys_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/libraries/gradle_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/main/java/plugin/AppPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/test/java/plugin/sys/plugins/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/NotificationPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PluginFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PluginLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/SMSPlugin.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +61,21 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2mC7org8Xc10QeMBcC1p9uINtHA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,12 +89,20 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "/home/linusz/IdeaProjects/plugin-sys/src/main/java/org/example/Main.java"
+    "last_opened_file_path": "/home/linusz/IdeaProjects/plugin-sys-plugins",
+    "onboarding.tips.debug.path": "/home/linusz/IdeaProjects/plugin-sys/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/plugins" />
     </key>
   </component>
@@ -74,7 +112,7 @@
       <module name="plugin-sys.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.plugins.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,5 +139,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
