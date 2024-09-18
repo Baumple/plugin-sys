@@ -7,7 +7,7 @@ und dem Factory Design-Pattern.
 
 ### Plugin-Entwicklung
 
-Um Plugins zu "entwickeln" kann man nun das Projekt kompilieren,
+Um Plugins zu "entwickeln" kann man das Projekt kompilieren,
 um eine Jar Datei zu erhalten, die das benötigte Interface `org.example.NotificationPlugin`
 enthält. Dieses fügt man jetzt einem separaten Projekt hinzu und erstellt eine Klasse,
 die dieses Interface implementiert.
