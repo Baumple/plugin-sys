@@ -4,4 +4,8 @@ public class EmailPlugin implements org.example.plugins.NotificationPlugin {
     public void sendNotification(String message) {
         System.out.println("Email: " + message);
     }
+
+    public String getName() {
+        return "Email Plugin";
+    }
 }

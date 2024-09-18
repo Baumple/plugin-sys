@@ -10,38 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/plugin_sys_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/libraries/gradle_wrapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/main/java/plugin/AppPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/app/src/test/java/plugin/sys/plugins/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/plugin-sys-plugins/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/TwitterPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/gui/PluginGUI.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/AppPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/NotificationPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PluginFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PluginLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/SMSPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/NotificationPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +37,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -136,6 +116,17 @@
       <updated>1726568884784</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
