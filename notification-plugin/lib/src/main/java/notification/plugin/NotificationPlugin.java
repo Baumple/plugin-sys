@@ -1,4 +1,6 @@
-package org.example.plugins;
+package notification.plugin;
+
+import javax.swing.*;
 
 public interface NotificationPlugin {
     void sendNotification(String message);

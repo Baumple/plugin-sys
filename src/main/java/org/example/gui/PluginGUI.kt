@@ -1,6 +1,6 @@
-package org.example.plugins.gui
+package org.example.gui
 
-import org.example.plugins.NotificationPlugin
+import notification.plugin.NotificationPlugin;
 import java.awt.BorderLayout
 import java.awt.Dimension
 import java.awt.Font
@@ -8,7 +8,7 @@ import javax.swing.*
 
 class PluginGUI(private val plugins: List<NotificationPlugin>) : JFrame() {
     private val selectionState =
-        plugins.associateWith { false }.toMutableMap()
+            plugins.associateWith { false }.toMutableMap()
 
     init {
         size = Dimension(400, 400)
@@ -60,13 +60,13 @@ class PluginGUI(private val plugins: List<NotificationPlugin>) : JFrame() {
         sb.font = font
         sb.addActionListener {
             plugins
-                .filter { selectionState[it] ?: false }
-                .forEach {
-                    JOptionPane.showMessageDialog(
-                        this,
-                        "Sent message via ${it.name}"
-                    )
-                }
+                    .filter { selectionState[it] ?: false }
+                    .forEach {
+                        JOptionPane.showMessageDialog(
+                                this,
+                                "Sent message via ${it.name}"
+                        )
+                    }
         }
 
         textPane.add(label, BorderLayout.NORTH)

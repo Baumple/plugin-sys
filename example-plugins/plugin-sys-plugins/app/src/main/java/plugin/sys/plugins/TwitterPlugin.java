@@ -1,4 +1,4 @@
-public class TwitterPlugin implements org.example.plugins.NotificationPlugin {
+public class TwitterPlugin implements notification.plugin.NotificationPlugin {
     public void sendNotification(String message) {
         System.out.println("Tweet: " + message);
     }

@@ -10,17 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/TwitterPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/gui/PluginGUI.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-plugin/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/AppPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/TwitterPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/TwitterPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/NotificationPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/gui/PluginGUI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/PluginGUI.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,16 +79,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/linusz/IdeaProjects/plugin-sys-plugins",
+    "last_opened_file_path": "/home/linusz/IdeaProjects/plugin-sys/notifaction-plugin/lib/src/main/java/notifaction/plugin",
     "onboarding.tips.debug.path": "/home/linusz/IdeaProjects/plugin-sys/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/notifaction-plugin/lib/src/main/java/notifaction/plugin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/plugins" />

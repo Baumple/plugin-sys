@@ -1,6 +1,8 @@
 package org.example.plugins;
 
-import java.lang.reflect.*;
+import notification.plugin.NotificationPlugin;
+
+import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -12,7 +14,8 @@ public class PluginFactory {
     }
 
     /**
-     * Create an instance of a Java class satisfying the {@link NotificationPlugin} interface.
+     * Create an instance of a Java class satisfying the {@link notification.plugin.NotificationPlugin} interface.
+     *
      * @param name Fully qualified name of the Java class (i.e. "org.example.SMSPlugin")
      * @return An Empty Optional if the plugin could not be loaded or does not satisfy the interface.
      */
@@ -37,6 +40,7 @@ public class PluginFactory {
 
     /**
      * Create an instance of a Java class satisfying the {@link NotificationPlugin} interface.
+     *
      * @param name Fully qualified name of the Java class (i.e. "org.example.SMSPlugin")
      * @return An Empty Optional if the plugin could not be loaded or does not satisfy the interface.
      */

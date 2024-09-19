@@ -1,7 +1,7 @@
 package org.example;
 
+import org.example.gui.PluginGUI;
 import org.example.plugins.PluginLoader;
-import org.example.plugins.gui.PluginGUI;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package org.example.plugins;
 
+import notification.plugin.NotificationPlugin;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
