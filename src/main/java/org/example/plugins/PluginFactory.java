@@ -6,6 +6,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.Optional;
 
+/**
+ * Can be an interface so subclasses can specify the concrete Product
+ */
 public class PluginFactory {
     private final ClassLoader classLoader;
 
@@ -16,7 +19,8 @@ public class PluginFactory {
     /**
      * Create an instance of a Java class satisfying the {@link notification.plugin.NotificationPlugin} interface.
      *
-     * @param name Fully qualified name of the Java class (i.e. "org.example.SMSPlugin")
+     * @param name   Fully qualified name of the Java class (i.e. "org.example.SMSPlugin")
+     * @param loader The {@link ClassLoader} used to load the class
      * @return An Empty Optional if the plugin could not be loaded or does not satisfy the interface.
      */
     public static Optional<NotificationPlugin> createPlugin(ClassLoader loader, String name) {

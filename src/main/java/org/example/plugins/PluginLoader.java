@@ -17,6 +17,7 @@ public class PluginLoader {
     public PluginLoader(String pathToJar) {
         // Required for the URLClassLoader
         var path = Path.of(pathToJar).toAbsolutePath().toString();
+        System.out.println("Reading jar at: " + path);
 
         var plugins = listPlugins(path);
 
@@ -48,7 +49,6 @@ public class PluginLoader {
      */
     private List<String> listPlugins(String pathToJar) {
         List<String> classNames = new ArrayList<String>();
-
         try (ZipInputStream zip = new ZipInputStream(new FileInputStream(pathToJar))) {
             for (ZipEntry entry = zip.getNextEntry(); entry != null; entry = zip.getNextEntry()) {
                 if (!entry.isDirectory() && entry.getName().endsWith(".class")) {
