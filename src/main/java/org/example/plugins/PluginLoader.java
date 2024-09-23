@@ -1,6 +1,8 @@
 package org.example.plugins;
 
 import notification.plugin.NotificationPlugin;
+import org.example.ConfigLoaderKt;
+import org.example.TomlResult;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,7 +17,7 @@ public class PluginLoader {
     HashMap<String, NotificationPlugin> loadedPlugins = new HashMap<>();
 
     public PluginLoader(String pathToJar) {
-        // Required for the URLClassLoader
+        // Absolute Path required for the URLClassLoader
         var path = Path.of(pathToJar).toAbsolutePath().toString();
         System.out.println("Reading jar at: " + path);
 
@@ -28,8 +30,17 @@ public class PluginLoader {
             plugins.stream()
                     .map(name -> PluginFactory.createPlugin(loader, name))
                     .filter(Optional::isPresent)
-                    .forEach(optPlugin ->
-                            optPlugin.ifPresent(plugin -> loadedPlugins.put(plugin.getClass().getName(), plugin))
+                    .map(Optional::get)
+                    .peek(plugin -> {
+                        var result = ConfigLoaderKt.loadConfig(plugin.getName());
+                        if (result instanceof TomlResult.Success s) {
+                            plugin.setConfig(s.getConfig());
+                        } else {
+                            System.out.println(result);
+                        }
+                    })
+                    .forEach(plugin ->
+                            loadedPlugins.put(plugin.getClass().getName(), plugin)
                     );
 
         } catch (IOException e) {

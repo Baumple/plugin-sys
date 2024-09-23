@@ -15,7 +15,10 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation(kotlin("stdlib-jdk8"))
-    implementation(files("/home/linusz/IdeaProjects/plugin-sys/notification-plugin/lib/build/libs/lib.jar"))
+    implementation(files("./notification-plugin/lib/build/libs/lib.jar"))
+
+    // Toml parser
+    implementation("com.moandjiezana.toml:toml4j:0.7.2")
 }
 
 application {

@@ -1,3 +1,5 @@
+package plugin.sys.plugins;
+
 public class TwitterPlugin implements notification.plugin.NotificationPlugin {
     public void sendNotification(String message) {
         System.out.println("Tweet: " + message);

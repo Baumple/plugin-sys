@@ -1,0 +1,9 @@
+plugin_name = "SMSPlugin"
+
+addresses = [
+    "Barbara",
+    "Bob",
+    "Mike",
+    "Michelle",
+    "Tom",
+]
