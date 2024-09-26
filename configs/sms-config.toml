@@ -1,4 +1,4 @@
-plugin_name = "SMSPlugin"
+plugin_name = "plugin.sys.plugins.SMSPlugin"
 
 addresses = [
     "Barbara",

@@ -1,11 +1,11 @@
 package notification.plugin;
 
-import javax.swing.*;
+import java.util.Map;
 
 import com.moandjiezana.toml.Toml;
 
 public interface NotificationPlugin {
     void sendNotification(String message);
 
-    String getName();
+    void setConfig(Map<String, Object> config);
 }
