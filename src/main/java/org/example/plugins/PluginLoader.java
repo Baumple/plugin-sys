@@ -1,8 +1,8 @@
 package org.example.plugins;
 
+import com.moandjiezana.toml.Toml;
 import notification.plugin.NotificationPlugin;
 import org.example.ConfigLoaderKt;
-import org.example.TomlResult;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,12 +14,15 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 public class PluginLoader {
-    HashMap<String, NotificationPlugin> loadedPlugins = new HashMap<>();
+    private HashMap<String, NotificationPlugin> loadedPlugins = new HashMap<>();
+    private HashMap<String, Toml> loadedConfigs = new HashMap<>();
 
     public PluginLoader(String pathToJar) {
         // Absolute Path required for the URLClassLoader
         var path = Path.of(pathToJar).toAbsolutePath().toString();
         System.out.println("Reading jar at: " + path);
+
+        var configs = ConfigLoader.getConfigs();
 
         var plugins = listPlugins(path);
 
