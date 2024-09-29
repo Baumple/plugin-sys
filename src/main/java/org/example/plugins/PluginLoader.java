@@ -1,7 +1,8 @@
 package org.example.plugins;
 
-import com.moandjiezana.toml.Toml;
 import notification.plugin.NotificationPlugin;
+import org.example.plugins.results.PluginCreationResult;
+import org.example.plugins.results.PluginLoadError;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,44 +14,49 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 public class PluginLoader {
-    private final List<TomlResult> errors = new ArrayList<>();
     private final Map<String, NotificationPlugin> loadedPlugins = new HashMap<>();
 
-    public void loadPluginsFromJar(String pathToJar) {
+    public Optional<PluginLoadError> loadPluginsFromJar(String pathToJar) {
         // Absolute Path required for the URLClassLoader
         var path = Path.of(pathToJar).toAbsolutePath().toString();
         System.out.println("Reading jar at: " + path);
-
-        var configResult = ConfigLoader.loadConfigs().logResult();
-        var configs = configResult.configs();
-        this.errors.addAll(configResult.errors());
 
         var plugins = listPlugins(path);
         try (URLClassLoader loader = URLClassLoader.newInstance(
                 new URL[]{new URL("file:///" + path)},
                 getClass().getClassLoader()
         )) {
-            plugins.stream()
-                    .map(name -> PluginFactory.createPlugin(loader, name))
-                    .filter(Optional::isPresent)
-                    .map(Optional::get)
-                    .forEach(plugin -> {
-                        var absoluteName = plugin.getClass().getName();
-                        System.err.println("Loaded plugin: " + absoluteName);
+            var loadResults = plugins.stream()
+                    .map(name ->
+                            PluginFactory.createPlugin(loader, name)
+                    )
+                    .toList();
 
-                        plugin.setConfig(configs.getOrDefault(absoluteName, new Toml()).toMap());
+            var errors = new ArrayList<PluginCreationResult>(List.of());
+            for (var result : loadResults) {
+                if (result instanceof PluginCreationResult.Ok ok) {
+                    loadedPlugins.put(ok.plugin.getClass().getName(), ok.plugin);
+                } else {
+                    errors.add(result);
+                }
+            }
 
-                        loadedPlugins.put(absoluteName, plugin);
-                    });
+            if (errors.isEmpty())
+                return Optional.empty();
+            else
+                return Optional.of(new PluginLoadError.PluginCreationError(errors));
 
         } catch (IOException e) {
             System.out.println("Failed to load a Plugin:\n");
-            e.printStackTrace();
+            return Optional.of(new PluginLoadError.IOError(e));
         }
     }
 
-    public Collection<NotificationPlugin> getPlugins() {
-        return this.loadedPlugins.values();
+    public List<NotificationPlugin> getPlugins() {
+        return this.loadedPlugins
+                .values()
+                .stream()
+                .toList();
     }
 
     /**
@@ -63,7 +69,7 @@ public class PluginLoader {
         try (ZipInputStream zip = new ZipInputStream(new FileInputStream(pathToJar))) {
             for (ZipEntry entry = zip.getNextEntry(); entry != null; entry = zip.getNextEntry()) {
                 if (!entry.isDirectory() && entry.getName().endsWith(".class")) {
-                    String className = entry.getName().replace('/', '.'); // including ".class"
+                    String className = entry.getName().replace('/', '.' ); // including ".class"
                     classNames.add(className.substring(0, className.length() - ".class".length()));
                 }
             }
@@ -73,4 +79,6 @@ public class PluginLoader {
 
         return classNames;
     }
+
+
 }

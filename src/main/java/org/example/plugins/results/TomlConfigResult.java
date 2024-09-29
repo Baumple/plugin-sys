@@ -1,4 +1,4 @@
-package org.example.plugins;
+package org.example.plugins.results;
 
 import com.moandjiezana.toml.Toml;
 
@@ -6,8 +6,8 @@ import com.moandjiezana.toml.Toml;
  * A result returned when reading a TOML file.
  * Subtypes represent the different ways this could fail or a success value.
  */
-public sealed class TomlResult {
-    public static final class Config extends TomlResult {
+public sealed class TomlConfigResult {
+    public static final class Config extends TomlConfigResult {
         public final String pluginName;
         public final Toml toml;
 
@@ -17,7 +17,7 @@ public sealed class TomlResult {
         }
     }
 
-    public static final class MissingConfigName extends TomlResult {
+    public static final class MissingConfigName extends TomlConfigResult {
         public final String path;
 
         public MissingConfigName(String path) {
@@ -25,7 +25,7 @@ public sealed class TomlResult {
         }
     }
 
-    public static final class InvalidToml extends TomlResult {
+    public static final class InvalidToml extends TomlConfigResult {
         public final IllegalStateException exception;
         public final String path;
 

@@ -1,10 +1,10 @@
 package org.example.plugins;
 
 import notification.plugin.NotificationPlugin;
+import org.example.plugins.results.PluginCreationResult;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
-import java.util.Optional;
 
 /**
  * Can be an interface so subclasses can specify the concrete Product
@@ -23,23 +23,23 @@ public class PluginFactory {
      * @param loader The {@link ClassLoader} used to load the class
      * @return An Empty Optional if the plugin could not be loaded or does not satisfy the interface.
      */
-    public static Optional<NotificationPlugin> createPlugin(ClassLoader loader, String name) {
+    public static PluginCreationResult createPlugin(ClassLoader loader, String name) {
         try {
             var loaded = loader.loadClass(name);
             var interfaces = loaded.getInterfaces();
 
             if (!Arrays.asList(interfaces).contains(NotificationPlugin.class)) {
-                return Optional.empty();
+                return new PluginCreationResult.MissingInterfaces(name);
             }
 
             var instance = (NotificationPlugin) loaded.getDeclaredConstructor().newInstance();
-            return Optional.of(instance);
+            return new PluginCreationResult.Ok(instance);
 
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | InvocationTargetException |
                  NoSuchMethodException e) {
             e.printStackTrace();
+            return new PluginCreationResult.OtherError(e);
         }
-        return Optional.empty();
     }
 
     /**
@@ -48,7 +48,9 @@ public class PluginFactory {
      * @param name Fully qualified name of the Java class (i.e. "org.example.SMSPlugin")
      * @return An Empty Optional if the plugin could not be loaded or does not satisfy the interface.
      */
-    public Optional<NotificationPlugin> createPlugin(String name) {
+    public PluginCreationResult createPlugin(String name) {
         return createPlugin(this.classLoader, name);
     }
+
+
 }

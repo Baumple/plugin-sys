@@ -1,6 +1,7 @@
 package org.example.plugins;
 
 import com.moandjiezana.toml.Toml;
+import org.example.plugins.results.TomlConfigResult;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -12,17 +13,17 @@ import java.util.List;
 public class ConfigLoader {
     public static final String CONFIG_DIR = "./configs";
 
-    public static TomlResult loadConfig(String path) {
+    public static TomlConfigResult loadConfig(String path) {
         try {
             var toml = new Toml().read(new File(path));
             if (!toml.contains("plugin_name")) {
-                return new TomlResult.MissingConfigName(path);
+                return new TomlConfigResult.MissingConfigName(path);
             }
             var name = toml.getString("plugin_name");
-            return new TomlResult.Config(name, toml);
+            return new TomlConfigResult.Config(name, toml);
 
         } catch (IllegalStateException e) {
-            return new TomlResult.InvalidToml(e, path);
+            return new TomlConfigResult.InvalidToml(e, path);
         }
     }
 
@@ -40,7 +41,7 @@ public class ConfigLoader {
             return new ConfigResult(new HashMap<>(), List.of());
         }
 
-        ArrayList<TomlResult> errors = new ArrayList<>();
+        ArrayList<TomlConfigResult> errors = new ArrayList<>();
         HashMap<String, Toml> configs = new HashMap<>();
 
         Arrays.stream(dir)
@@ -49,7 +50,7 @@ public class ConfigLoader {
                 .map(ConfigLoader::loadConfig)
                 .forEach(it -> {
                     // if the config could be loaded successfully
-                    if (it instanceof TomlResult.Config config) {
+                    if (it instanceof TomlConfigResult.Config config) {
                         configs.put(config.pluginName, config.toml);
                     } else {
                         // if the config could not be loaded successfully we add its error to the error stack.

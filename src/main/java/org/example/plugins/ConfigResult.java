@@ -1,6 +1,7 @@
 package org.example.plugins;
 
 import com.moandjiezana.toml.Toml;
+import org.example.plugins.results.TomlConfigResult;
 
 import java.util.List;
 import java.util.Map;
@@ -12,7 +13,7 @@ import java.util.Map;
  * @param configs Successfully read config files.
  * @param errors  Errors that occurred during reading.
  */
-public record ConfigResult(Map<String, Toml> configs, List<TomlResult> errors) {
+public record ConfigResult(Map<String, Toml> configs, List<TomlConfigResult> errors) {
     public ConfigResult logResult() {
         if (!configs.isEmpty()) {
             System.err.println("Loaded configs:");
