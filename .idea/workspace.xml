@@ -9,23 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="Improved error system????">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/PluginManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/StartMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/results/PluginCreationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/results/PluginLoadError.java" afterDir="false" />
+    <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/EmailPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/SMSPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/TwitterPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/src/main/java/plugin/sys/plugins/TwitterPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/PluginConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-plugin/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/ConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/ConfigResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/ConfigResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/TomlResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/results/TomlConfigResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +52,9 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -73,13 +69,15 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.plugin-sys [:Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/linusz/IdeaProjects/plugin-sys/notifaction-plugin/lib/src/main/java/notifaction/plugin&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/home/linusz/IdeaProjects/plugin-sys/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
@@ -92,12 +90,8 @@
       <recent name="$PROJECT_DIR$/notifaction-plugin/lib/src/main/java/notifaction/plugin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/plugins" />
-    </key>
-    <key name="MoveInnerDialog.RECENTS_KEY">
-      <recent name="org.example.plugins" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,7 +100,7 @@
       <module name="plugin-sys.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.plugins.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,15 +123,6 @@
       <option name="presentableId" value="Default" />
       <updated>1726568884784</updated>
     </task>
-    <task id="LOCAL-00001" summary="Improved error system????">
-      <option name="closed" value="true" />
-      <created>1727391174561</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1727391174561</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,8 +138,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Improved error system????" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved error system????" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

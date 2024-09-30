@@ -25,6 +25,7 @@ public class Application extends JFrame {
         this.setJMenuBar(createMenuBar());
         this.add(startMenuView, BorderLayout.CENTER);
 
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
 
