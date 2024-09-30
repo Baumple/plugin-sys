@@ -1,0 +1,53 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ArtifactsWorkspaceSettings\">\n    <artifacts-to-build>\n      <artifact name=\"plugin-sys:jar\" />\n    </artifacts-to-build>\n  </component>\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"f12afe06-41e0-412c-9cfc-fc89dd7df21b\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/example/plugins/ConfigLoader.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/example/plugins/JTomlResult.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/build.gradle.kts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/build.gradle.kts\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/ConfigLoader.kt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/JTomlResult.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Kotlin Class\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"FormatOnSaveOptions\">\n    <option name=\"myRunOnSave\" value=\"true\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"OptimizeOnSaveOptions\">\n    <option name=\"myRunOnSave\" value=\"true\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"2mC7org8Xc10QeMBcC1p9uINtHA\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\n    &quot;Gradle.plugin-sys [:Main.main()].executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/home/linusz/IdeaProjects/plugin-sys/notifaction-plugin/lib/src/main/java/notifaction/plugin&quot;,\n    &quot;onboarding.tips.debug.path&quot;: &quot;/home/linusz/IdeaProjects/plugin-sys/src/main/java/org/example/Main.java&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,\n    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/notifaction-plugin/lib/src/main/java/notifaction/plugin\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/examples\" />\n      <recent name=\"$PROJECT_DIR$/src/main/java/org/example/plugins\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.example.Main\" />\n      <module name=\"plugin-sys.main\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.example.plugins.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"f12afe06-41e0-412c-9cfc-fc89dd7df21b\" name=\"Changes\" comment=\"\" />\n      <created>1726568884784</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1726568884784</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c406c9d9cdb29ff470bf5979679ad223a1c96850)
++++ b/.idea/workspace.xml	(date 1727423146047)
+@@ -9,16 +9,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/ConfigLoader.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/JTomlResult.java" afterDir="false" />
++    <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="sync">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/example-plugins/plugin-sys-plugins/app/build.gradle.kts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfigLoader.kt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JTomlResult.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/plugins/PluginLoader.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -119,6 +111,15 @@
+       <option name="presentableId" value="Default" />
+       <updated>1726568884784</updated>
+     </task>
++    <task id="LOCAL-00001" summary="sync">
++      <option name="closed" value="true" />
++      <created>1727383185796</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1727383185796</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -134,6 +135,8 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
++    <MESSAGE value="sync" />
++    <option name="LAST_COMMIT_MESSAGE" value="sync" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />

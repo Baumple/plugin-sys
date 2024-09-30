@@ -7,10 +7,11 @@ und dem Factory Design-Pattern.
 
 ### Plugin-Entwicklung
 
-Um Plugins zu "entwickeln" kann man das Projekt kompilieren,
-um eine Jar Datei zu erhalten, die das benötigte Interface `org.example.NotificationPlugin`
-enthält. Dieses fügt man jetzt einem separaten Projekt hinzu und erstellt eine Klasse,
-die dieses Interface implementiert.
+Um Plugins zu "entwickeln" benötigt man das NotificationPlugin interface.
+In der Subdirectory "notification-plugin" befindet sich ein Gradle-Projekt,
+indem das interface liegt. Die kompilierte Jar-Datei kann man dann in einem separaten
+Gradle-Projekt einbetten und so eine Klasse, die das Interface implementiert erstellen.
+Ein Beispiel dafür findet sich in der example-plugins directory.
 
 Bsp. (mit gradle):
 
@@ -18,29 +19,28 @@ Bsp. (mit gradle):
 // app/build.gradle.kts
 
 dependencies {
-    implementation(files("path/to/local/jar"))
+    implementation(files("path/to/notification-plugin-jar"))
     // ...
 }
 // ...
 ```
 
+### Verwendung
+
 Das Interface kann nun im Projekt verwendet werden:
 
 ```java
-import org.example.NotificationPlugin;
+import notification.plugin.NotificationPlugin;
 
 public class SMSPlugin implements NotificationPlugin {
     public void sendNotification(String message) {
         // ...
     }
+    // ...
 }
 ```
-
-### Plugin-Verwendung
 
 Um die Implementationen verwenden zu können muss man nun die Plugin-Klassen
 zu einer Jar-Datei kompilieren.
 
-Das Laden der Plugins in das Programm übernimmt schließlich die Klasse `PluginLoader` die mit einem Pfad
-zu einer Jar-Datei mit den Plugins initialisiert wird. Die erfolgreich geladenen
-Plugins kann man über die Methode `PluginLoader::getPlugins` erhalten.
+Das Laden der Plugins übernimmt dann der PluginLoader.

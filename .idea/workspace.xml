@@ -9,16 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f12afe06-41e0-412c-9cfc-fc89dd7df21b" name="Changes" comment="sync">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/lib/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/NotificationPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-plugin/lib/src/main/java/notification/plugin/PluginConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-plugin/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/notification-plugin/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +116,15 @@
       <option name="presentableId" value="Default" />
       <updated>1726568884784</updated>
     </task>
+    <task id="LOCAL-00001" summary="sync">
+      <option name="closed" value="true" />
+      <created>1727692326431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727692326431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +140,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
